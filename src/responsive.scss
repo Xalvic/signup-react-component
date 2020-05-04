@@ -1,0 +1,55 @@
+@mixin inputs {
+  font-size: 12px;
+  padding: 8px 8px;
+}
+@mixin dimension {
+  height: 430px;
+  width: 330px;
+}
+@media (max-width: 1400px) {
+  @mixin former {
+    height: 95%;
+    justify-content: space-between;
+  }
+  #Register {
+    .form {
+      @include dimension();
+      h1 {
+        font-size: 32px;
+        letter-spacing: 7px;
+        word-spacing: 7px;
+      }
+      form {
+        input {
+          @include inputs();
+        }
+      }
+    }
+    .form-a {
+      @include dimension();
+      h1 {
+        font-size: 32px;
+        letter-spacing: 7px;
+        word-spacing: 7px;
+      }
+      form {
+        input {
+          @include inputs();
+        }
+      }
+    }
+    .form-b {
+      @include dimension();
+      h1 {
+        font-size: 32px;
+        letter-spacing: 7px;
+        word-spacing: 7px;
+      }
+      form {
+        input {
+          @include inputs();
+        }
+      }
+    }
+  }
+}
